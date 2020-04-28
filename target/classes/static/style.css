@@ -1,0 +1,144 @@
+body{
+
+}
+.navbar-default .navbar-brand {
+
+}
+.navbar-custom {
+    background-color:#24292e;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color:  #ffffff;
+}
+.Mydiv{
+    width: 681px;
+    outline: 2px solid #353b48;
+    border-radius: 50px;
+    box-shadow:  0px 0px 50px 8px #353b48;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffffff;
+
+}
+ul.nav li a, ul.nav li a:visited {
+    color: #D3D3D3 !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: #D3D3D3 !important;
+}
+
+ul.nav li.active a {
+    color: #D3D3D3 !important;
+}
+.myref {
+    color: #0366d6 !important;
+    font-size: medium;
+}
+.bluebutton {
+    background-color:#04b8b1;
+    color:#ffffff;
+}
+
+.bluebutton:hover {
+    background-color: #17a29d;
+    color: #ffffff;
+}
+
+.mybtact {
+    background-color:#ffffff;
+    color:#0366d6;
+    text-size: medium;
+}
+
+mycard{
+    border-color:  #ffffff;
+    text-emphasis-color: #ffffff;
+    text-decoration-color: white;
+
+    bg-color:#31373e ;
+}
+table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+.mybutton {
+    background-color:#0366d6;
+    color:#ffffff;
+}
+.myPrimaryOff {
+    background-color: grey;
+    color:#ffffff;
+    border-style: double;
+    border: 100px  dodgerblue;
+}
+.buttontest {
+    font-size: 30px;
+    border-radius: 1px;
+    border: 2px solid #0366d6; /* Green */
+}
+.mybutton:hover {
+    background-color: #005abf;
+    color: #ffffff;
+}
+.semi {
+    opacity: 0.4; /* Полупрозрачность элемента */
+}
+.test{
+
+    width: 120px;
+    height: 40px;
+    background: none;
+    border: 3px solid;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 5px;
+
+    cursor: pointer;
+    font-size: 12px;
+    position: relative;
+}
+
+.test::before,.test::after{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 4px;
+    background: #353b48;
+    transform: skewX(50deg);
+    transition: .4s linear;
+}
+
+.test::before{
+    top: -4px;
+    left: 10%;
+}
+
+.test::after{
+    bottom: -4px;
+    right: 10%;
+}
+
+.test:hover::before{
+    left: 80%;
+}
+
+.test:hover::after{
+    right: 80%;
+}
+.layer {
+    margin-top: -10px;
+
+}
+.layer1 {
+    margin-top: 18px;
+
+}
+.layerSm {
+    height: 5%; /* Высота блока */
+    width: 5%; /* Ширина блока */
+}
