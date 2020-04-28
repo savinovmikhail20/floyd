@@ -18,7 +18,7 @@ import java.util.Map;
 public class UserController {
     @Autowired
     private UserService userService;
-    @PreAuthorize("hasAuthority('ADMIN')") //чтоб хуй с горы не мог контроллирвать юзеров, также добавл аннотацию в веб секьюр конф
+    @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping
     public  String userList(Model model){
         model.addAttribute("users", userService.findAll());

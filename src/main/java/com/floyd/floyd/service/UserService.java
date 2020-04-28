@@ -88,7 +88,7 @@ if(user==null) {
         if (!StringUtils.isEmpty(user.getEmail())) {
             String message = String.format(
                     "Hello, %s! \n" +
-                            "Welcome to Sweater. Please, visit next link: http://localhost:8080/activate/%s",
+                            "Welcome to Floyd. Please, visit next link: http://floyd-app.herokuapp.com/activate/%s",
                     user.getUsername(),
                     user.getActivationCode()
             );
@@ -159,7 +159,7 @@ if(user==null) {
         Set<String> roles =Arrays.stream(Role.values()).map(Role::name).collect(Collectors.toSet());
 
         user.getRoles().clear();
-        for(String key:form.keySet()){               // фильтруем роли?????
+        for(String key:form.keySet()){
             if(roles.contains(key)){
                 user.getRoles().add(Role.valueOf(key));
             }

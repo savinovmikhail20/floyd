@@ -12,7 +12,7 @@ public class MvcConfig implements WebMvcConfigurer {
 
 
 
-   @Bean                // запрос на сервисы гугл(каптча)
+   @Bean
    public RestTemplate restTemplate(){
       return new RestTemplate();
    }
@@ -28,6 +28,6 @@ public class MvcConfig implements WebMvcConfigurer {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
         registry.addResourceHandler("/static/**").
-                addResourceLocations("classpath:/static/")  ;           //класспат -  при обра по пути статик ресурсы будут искаться не в файл сист, а в дереве проекта
+                addResourceLocations("classpath:/static/")  ;
     }
 }
